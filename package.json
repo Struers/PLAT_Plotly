@@ -156,7 +156,7 @@
   "name": "@struers/plotly",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plotly/plotly.js.git"
+    "url": "git+https://github.com/Struers/PLAT_Plotly"
   },
   "scripts": {
     "baseline": "node test/image/make_baseline.js",
