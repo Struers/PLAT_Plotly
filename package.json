@@ -154,6 +154,7 @@
   "license": "MIT",
   "main": "dist/plotly-struers.min.js",
   "name": "@struers/plotly",
+  "version": "2.6.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Struers/PLAT_Plotly"
@@ -200,7 +201,6 @@
     "version": "npm run build && npm run no-bad-char && npm run no-new-func && git add -A lib dist build src/version.js",
     "watch": "node tasks/watch.js",
     "build-struers": "npm run custom-bundle -- --traces scatter --out struers --transforms none"
-  },
-  "version": "2.6.3",
+  },  
   "webpack": "./dist/plotly.js"
 }

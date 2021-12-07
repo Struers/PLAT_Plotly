@@ -1,5 +1,5 @@
 {
-  "name": "plotly.js",
+  "name": "@struers/plotly.js",
   "version": "2.6.3",
   "lockfileVersion": 1,
   "requires": true,
