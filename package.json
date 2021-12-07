@@ -1,39 +1,10 @@
 {
-  "_from": "plotly.js",
-  "_id": "plotly.js@2.6.3",
-  "_inBundle": false,
-  "_integrity": "sha512-MSdevryj5VvSZvr+slTnJcZgOmvMPZEUe8rFY+3ygxbVUFqmcOvT0TurUx4g07tfAVZ+UhXIaskHnAZNmUcNTg==",
-  "_location": "/plotly.js",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "plotly.js",
-    "name": "plotly.js",
-    "escapedName": "plotly.js",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/plotly.js/-/plotly.js-2.6.3.tgz",
-  "_shasum": "a86b797e4b1299d2c6935d29e562aa2b838d5ec9",
-  "_spec": "plotly.js",
-  "_where": "/home/henrik/projects/test/plotly",
-  "author": {
-    "name": "Plotly, Inc."
-  },
-  "browserify": {
-    "transform": [
-      "glslify",
-      "./tasks/compress_attributes.js"
-    ]
-  },
-  "bugs": {
-    "url": "https://github.com/plotly/plotly.js/issues"
+  "name": "@struers/plotly",
+  "main": "dist/plotly-struers.min.js",
+  "version": "2.6.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Struers/PLAT_Plotly"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
@@ -149,13 +120,6 @@
     "plotly"
   ],
   "license": "MIT",
-  "main": "dist/plotly-struers.min.js",
-  "name": "@struers/plotly",
-  "version": "2.6.3",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Struers/PLAT_Plotly"
-  },
   "scripts": {
     "baseline": "node test/image/make_baseline.js",
     "build": "npm run empty-dist && npm run preprocess && npm run find-strings && npm run bundle && npm run extra-bundles basic && npm run extra-bundles cartesian && npm run extra-bundles geo && npm run extra-bundles gl2d && npm run extra-bundles gl3d && npm run extra-bundles mapbox && npm run extra-bundles finance && npm run extra-bundles strict && npm run locales && npm run schema dist && npm run stats",
@@ -198,6 +162,5 @@
     "version": "npm run build && npm run no-bad-char && npm run no-new-func && git add -A lib dist build src/version.js",
     "watch": "node tasks/watch.js",
     "build-struers": "npm run custom-bundle -- --traces scatter --out struers --transforms none"
-  },  
-  "webpack": "./dist/plotly.js"
+  }
 }
