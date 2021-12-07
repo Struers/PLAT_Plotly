@@ -38,9 +38,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "files": [
-    "dist"
-  ],
   "bundleDependencies": false,
   "dependencies": {
     "@plotly/d3": "3.8.0",
